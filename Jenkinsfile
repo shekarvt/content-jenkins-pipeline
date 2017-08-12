@@ -14,10 +14,10 @@ pipeline {
                       }
                 } 
 
-            post{
-                success {
-                    archiveArtifacts artifacts: 'rectangular.jar', fingerprint:true
-                    }
-                }    
-            }
          }
+         post{
+            success {
+                  archiveArtifacts artifacts: 'rectangular.jar', fingerprint:true
+                    }
+            }
+    }
